@@ -1,0 +1,614 @@
+
+@font-face {
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 400;
+   src:
+   url('../fonts/rubik-v14-latin_cyrillic-regular.woff2') format('woff2'),
+   url('../fonts/rubik-v14-latin_cyrillic-regular.woff format')('woff'); 
+}
+
+@font-face {
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 500;
+   src: 
+   url("../fonts/rubik-v14-latin_cyrillic-500.woff2") format('woff2'), 
+   url('../fonts/rubik-v14-latin_cyrillic-500.woff') format('woff'); 
+}
+
+@font-face {
+   font-family: 'Rubik';
+   font-style: normal;
+   font-weight: 700;
+   src: 
+   url('../fonts/rubik-v14-latin_cyrillic-700.woff2') format('woff2'), 
+   url('../fonts/rubik-v14-latin_cyrillic-700.woff') format('woff'); 
+}
+
+
+
+*{ 
+   box-sizing: border-box;
+}
+img{
+   vertical-align: middle;
+}
+body
+{
+   margin: 0;
+   padding: 0;
+   font-family: 'Rubik', 'Arial' , sans-serif; 
+}
+.visually-hidden
+{
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   padding: 0;
+   overflow: hidden;
+   border: 0;
+   clip: rect(0 0 0 0)
+}
+.container{
+   width: 1240px;
+   padding-right: 20px;
+   padding-left: 20px;
+   margin-right: auto;
+   margin-left: auto;
+}
+.header-top{
+   background: #F6F6F6;
+   padding: 30px 0;
+   margin-bottom: 30px;
+}
+
+.header-top-inner{
+   display: flex;
+   align-items: center;
+   
+}
+
+.site-logo{
+   width: 276px;
+   height: 45px;
+   margin-right: 35px;
+}
+.currency-list{
+   display: flex;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-right: auto;
+   
+}
+.currency-item{
+   margin-right: 25px;
+   color: #555555;
+   
+}
+.symbol{
+   font-weight: bold;
+   font-size: 16px;
+   line-height: 19px;
+   color: #2959CE;
+   
+}
+.languages{
+   width: 70px;
+   height: 36px;
+   background-color: #DCE6FF;
+   border-radius: 39px;
+   padding: 3px;
+   margin-right: 25px;
+   
+   
+   
+}
+.languages-link{
+   text-align: center;
+   width: 30px;
+   height: 30px;
+   line-height: 30px;
+   font-size: 13px;
+   color: #A6A6A6;
+   text-decoration: none;
+}
+.active-language{
+   color: #000;
+   background-color: #fff;
+   border-radius: 50%;
+   padding: 5px;
+   
+}
+.personal-cabinet{
+   text-decoration: none;
+   background-color: #7296EC;
+   padding: 13px 20px;
+   color: #fff;
+   border-radius: 10px;
+   
+}
+.header-middle{
+   margin-bottom: 50px;
+}
+.nav{
+   border-bottom: 1px solid #D1D1D1;
+   margin-bottom: 40px;
+}
+.nav-list{
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   margin-bottom: 20px;
+}
+.nav-item{
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 21px;
+   text-align: center;
+}
+.nav-link{
+   text-decoration: none;
+   color: #7F7F7F;
+   text-align: center;
+}
+
+
+.header-bottom-inner{
+   margin-bottom: 50px;
+}
+/* ===========================================================HEADER FINISH=========================================================== */
+
+.latest-news{
+   margin-bottom: 60px;
+}
+.main-list{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 0;
+   list-style: none;
+   margin: 1px;
+   align-items: flex-end;
+}
+.main-item{
+   width: 394px; 
+   background: #F6F6F6;
+   border-radius: 15px;
+   padding-top: 20px;
+   padding-right: 17px;
+   padding-bottom: 5px;
+   padding-left: 17px;
+   margin-bottom: 10px;
+}
+.main-link-title{
+   text-decoration: none;
+   list-style: none;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   color: #000000;
+   
+}
+.main-link-text{
+   text-decoration: none;
+   list-style: none;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   color: #4A4B4C;
+}
+.main-title{
+   height: 78px;
+   margin: 10px 0px;
+   color: #000000;
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 26px;  
+}
+.main-text{
+   font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+   color: #4A4B4C;
+   margin: 10px 0px; 
+}
+.main-image{
+   width: 359px;
+   height: 165px; 
+}
+.news-item-box{
+   display: flex;
+   align-items: center; 
+   padding: 0;
+   margin: 0;
+}
+.main-littlt-logo{
+   width: 20px;
+   height: 20px;
+   margin-right: 10px;
+}
+.little-text{
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 14px;
+   color: #5E5F61;
+}
+
+/* ================================================================================= */
+.notifications{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 1050px;
+   height: 100px;
+   background-image: url(../images/Group-35-1.png);
+   padding: 24px;
+   padding-right: 71px;
+   padding-left: 29px;
+   margin: 0 auto;
+   margin-bottom: 60px;
+}
+.notification-box{
+   width: 404px;
+}
+.notifications-title{
+   font-style: normal;
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 26px;
+}
+.turn-on{
+   width: 149px;
+   height: 50px;
+   text-align: center;
+   padding: 13px 30px;
+   background: #F78B3B;
+   border-radius: 10px;
+   text-decoration: none;
+   color: #FFFFFF;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+}
+.turn-on:hover{
+   background-color: #F02913;
+   transition: 0.5s;
+}
+/* ======================================SECTION ONE FINISH====================================== */
+.in-the-world{
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+}
+.other-news{
+   display: flex;
+   justify-content: space-around;
+   
+}
+.abroad{
+   width: 797px;
+   
+   margin-right: 10px;
+   
+}
+
+
+.world-list{
+   padding: 0;
+   
+}
+.world-item{
+   display: flex;
+   width: 797px;
+   height: 205px;
+   background: #F6F6F6;
+   border-radius: 15px;
+   padding: 20px 20px 20px 17px;
+   margin-bottom: 10px;
+   list-style: none;
+   
+}
+.world-img{
+   width: 210px;
+   height: 165px;
+   margin-right: 15px;
+}
+.box-inner-the-world{
+   vertical-align: middle;
+   align-items: center;
+
+   
+}
+.world-item-title{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 26px;
+   margin: 0;
+   margin-bottom: 10px;
+}
+.more{
+   height: 53px;
+   background: #EAEAEA;
+   border-radius: 10px;
+   margin-top: 7px;
+   margin-bottom: 100px;
+   padding: 17px 343px;
+}
+.more:hover{
+   background-color: #318CE7;
+   transition: 0.5s;
+}
+
+.world-item-link{
+   text-decoration: none;
+   color: #000;
+}
+.world-item-text{
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 22px;
+   color: #4A4B4C;
+   margin: 0;
+   padding: 0;
+   margin-bottom: 18px;
+}
+.world-span{
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 14px;
+   color: #5E5F61;
+}
+.more-link{
+   text-decoration: none;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 19px;
+   color: #000;
+}
+
+
+/* =============================================================================== */
+
+.local{
+   
+   background: #F6F6F6;
+   border-radius: 15px;
+   margin: 0;
+   padding: 20px 20px 5px 17px ;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   
+   
+}
+.local-title{
+   font-style: normal;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 28px;
+   margin: 0;
+   margin-bottom: 25px;
+   padding: 0;
+   
+}
+.local-list{
+   list-style: none;
+   padding: 0;
+   
+   margin-bottom: 15px;
+   
+}
+
+.local-subtitle{
+   font-style: normal;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 22px;
+   padding: 0;
+   margin: 0;
+   margin-bottom: 8px;
+   
+}
+.local-link{
+   text-decoration: none;
+   color: #000000;
+   margin-bottom: 8px;
+   
+}
+.local-span{
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 15px;
+   color: #5E5F61;
+   padding: 0;
+   margin: 0;
+   margin-bottom: 20px;
+}
+.end{
+   margin-bottom: 25px;
+}
+.line{
+   display: block;
+   width: 359px;
+   border: 0.1px solid #D2D2D2;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+.local-pic{
+   width: 393px;
+   height: 338px;
+}
+.second{
+   width: 393px;
+   height: 553px;
+}
+
+/* ===================================================MAIN FINISH=================================================== */
+
+footer{
+   background: #7297EF;
+   
+}
+
+.site-logo-in-footer{
+   margin-bottom: 15px;
+   
+   
+}
+.footer-box{
+   
+   width: 1098px;
+   color: #FFFFFF;
+   padding: 40px;
+   margin: 0 auto;
+   
+}
+.footer-inner{
+   display: flex;
+   border-bottom: 1px solid #D2D2D2;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: 20px;
+   
+   
+}
+.lisenzion{
+   width: 229px;
+   height: 95px;
+   margin-right: 203px;
+   
+}
+.lisenzion-text{
+   margin-top: 0;
+   margin-bottom: 0;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 12px;
+   line-height: 19px;
+   
+}
+
+
+.info-site-list{
+   list-style: none;
+   margin: 0;
+   margin-right: 100px;
+   padding: 0;
+   
+}
+.info-site-item{
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+   
+   
+   
+}
+.footer-link{
+   text-decoration: none;
+   color: #FFFFFF;
+   
+}
+
+.about-site-list{
+   margin: 0;
+   list-style: none;
+   padding: 0;
+   
+}
+.about-site-item{
+   margin-bottom: 20px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 19px;
+}
+
+
+/* ============================================================================= */
+.our-sites-box{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.text-box{
+   width: 166px;
+   height: 46px;
+}
+.our-sites-text{
+   font-weight: 500;
+   font-size: 18px;
+   line-height: 23px;
+   margin: 0;
+   
+}
+.our-sites-list{
+   display: flex;
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.our-sites-item{
+   margin-left: 25px;
+}
+/* ========================================Indexnews start======================================== */
+.Ilon-mask{
+   width: 797px;
+   margin-right: 10px;
+   
+}
+.logo-mask-box{
+   margin-bottom: 30px;
+}
+.logo-mask{
+   width: 30px;
+   height: 30px;
+
+}
+.world-span{
+   font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+color: #5E5F61;
+}
+.Ilon-mask-title{
+   font-weight: 500;
+font-size: 26px;
+line-height: 36px;
+}
+.ilon-mask-img{
+   width: 797px;
+   height: 300px;
+   margin-bottom: 25px;
+}
+.ilon-mask-text{
+   font-weight: normal;
+font-size: 20px;
+line-height: 30px;
+margin-bottom: 24px;
+}
+.ilon-line{
+   display: block;
+   border: 0.1px solid #D2D2D2;
+   margin-top: 50px;
+   margin-bottom: 60px;
+}
+.interesting-news{
+   margin-bottom: 100px;
+}
+
+
